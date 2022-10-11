@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Me encantas</title>
+    <link rel="stylesheet" href="style2.css">
+  </head>
+  <body>
+    <header>
+      <a href="#" class="amor">10/10/22</a>
+      <ul>
+        <li><a id = "hoy" href="month.html" class="active">Hoy</a></li>
+        <li><a href="month2.html">Nosotros</a></li>
+        <li><a href="https://open.spotify.com/playlist/4f4HsnjZ3emjY4Dm83a8Ey?si=d65a1fde2b314af0&pt=6d60a7bc7013588e7ca132234325e005">Musica</a></li>
+        <li><a href="https://earth.google.com/web/search/Liceo+Segovia,+Bogot%c3%a1/@4.7034293,-74.0769337,2566.125365a,0d,60y,356.21663472h,85t,0r/data=CigiJgokCclMq-0XQRNAEU1zsYgq1BJAGdxc7lvxflLAIUEyvy24jVLAIjAKLEFGMVFpcE9TU214UmxYcXBnMEJxSWpfNVdXX0xpQzB1bXFnZ2ljOTdDSkZwEAU">Lugar</a></li>
+      </ul>
+    </header>
+    <section>
+      <img src="stars.png" id="stars">
+      <img src="moon.png" id="moon">
+      <img src="mountains_behind.png" id="mountains_behind">
+      <h2 id="text">Los Mejores 5 Meses</h2>
+      <a href="#sec" id="btn">Un beso para bajar</a>
+      <img src="mountains_front.png" id="mountain_front">
+    </section>
+    <div class="sec" id="sec">
+      <h2>Mi Vida Hermosa...</h2>
+      <p>
+        Ya son 5 mese los que cumplimos de estar juntos, de estar compartiendo todos nuestros momentos, de no parar de reir, de disfrutar cada
+        segundo que pasamos juntos. Mi princesaaa eres lo mejor que me haya podido pasar, volveria a ir a laboratorio a que me jalaras la camisa
+        y me llevaras al salon de quimica, a entregarme la postal mas hermosa de este mundo, y me sentarias para que la leyera, volveria a levantar
+        mi cabeza y levantandote dandote muchos muchos muchos besos, te volveria a decir infinidad de veces que lo intentaramos. Amor, tu eres mi sueño
+        cumplido, una persona como tu solo la encuentras una vez en la vida, y tuve la fortuna de encontrar esos bellos y grandes ojos cafes, esas
+        pequitas que adornan tu hermosa carita, y esa sonrisa que cada vez que la veo me matas... y me muero.
+        <br>
+        <br>
+          No necesito una fecha especial para decirte cuanto te amo, y es por eso que a diario te lo repito, y no solo lo digo porque me salga de
+          mi boca, sino que de verdad te lo digo, AHHHHH, ME ENCANTASSSS, TE ADOROOOOOO, no me imagino una sola mañana sin un mensajito tuyo diciendome
+          'buenos dias amor' o una noche diciendome que descanse, que sueñe contigo, que me llenas de besos.
+          Todo lo que hemos hecho juntos cada salida, es como una aventura para mi, contigo a tu lado me siento mas seguro y confiado y es por eso
+          que contigo a donde sea mi amor.
+          <br>
+          <br>
+        Solo te quiero decir que cada dia de mi vida, voy a tratar de enamorarte un poquito mas, voy a seguir amandote, voy a seguir diciendote lo hermosa, linda, maravillosa,
+        divina y sexy que eres, te voy a hacer saber a diario lo valiosa que eres, lo mucho que vales en mi vida y lo mucho que te valoro y te amoo.
+        Y por ultimo mi amor quiero que sepas que te voy a cuidar como la princesa que eres. Amo consentirte, pasar mis dedos por ti carita suave y delicada, por tu pelo
+        liso, suave y largo, amo escuchar tu voz, cada audio que me mandas es como si te tuviera cerquita a mi, pero lo que mas me gusta es cuando me cantas.
+        
+      </p>
+    </div>
+    <script>
+      let stars = document.getElementById('stars');
+      let moon = document.getElementById('moon');
+      let mountains_behind = document.getElementById('mountains_behind');
+      let text = document.getElementById('text');
+      let btn = document.getElementById('btn');
+      let mountain_front = document.getElementById('mountain_front');
+      let header = document.querySelector('header');
+
+      window.addEventListener('scroll', function functionName() {
+         let value = window.scrollY;
+         stars.style.left = value * 0.25 + 'px';
+         moon.style.top = value * 1.05 + 'px';
+         mountains_behind.style.top = value * 0.5 + 'px';
+         mountain_front.style.top = value * 0 + 'px';
+         text.style.marginRight = value * 3.5 + 'px';
+         text.style.marginTop = value * 1.5 + 'px';
+         btn.style.marginTop = value * 1.5 + 'px';
+         header.style.top = value * 0.5 + 'px';
+      })
+
+    </script>
+  </body>
+</html>

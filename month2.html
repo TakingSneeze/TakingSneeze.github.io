@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Me encantas</title>
+    <link rel="stylesheet" href="style3.css">
+  </head>
+  <body>
+    <header>
+      <a href="#" class="amor">Te amo <3</a>
+      <ul>
+        <li><a href="month.html" class="active">Hoy</a></li>
+        <li><a href="month2.html">Nosotros</a></li>
+        <li><a href="https://open.spotify.com/playlist/4f4HsnjZ3emjY4Dm83a8Ey?si=d65a1fde2b314af0&pt=6d60a7bc7013588e7ca132234325e005">Musica</a></li>
+        <li><a href="https://earth.google.com/web/search/Liceo+Segovia,+Bogot%c3%a1/@4.7034293,-74.0769337,2566.125365a,0d,60y,356.21663472h,85t,0r/data=CigiJgokCclMq-0XQRNAEU1zsYgq1BJAGdxc7lvxflLAIUEyvy24jVLAIjAKLEFGMVFpcE9TU214UmxYcXBnMEJxSWpfNVdXX0xpQzB1bXFnZ2ljOTdDSkZwEAU">Lugar</a></li>
+      </ul>
+    </header>
+    <section>
+      <img src="stars.png" id="stars">
+      <img src="moon.png" id="moon">
+      <img src="mountains_behind.png" id="mountains_behind">
+      <h2 id="text">Los Mejores 5 Meses</h2>
+      <a href="#sec" id="btn">Mirar</a>
+      <img src="mountains_front.png" id="mountain_front">
+    </section>
+    <div class="sec" id="sec">
+      <h2>Eres los mejor que me ha pasado</h2>
+      <div class="row">
+        <div class="column">
+       <img src="WhatsApp Image 2022-10-10 at 7.44.53 PM.jpeg"  alt="">
+       <img src="WhatsApp Image 2022-10-10 at 7.44.54 PM (1).jpeg" alt="">
+       <img src="WhatsApp Image 2022-10-10 at 7.44.54 PM (2).jpeg" alt="">
+       <img src="WhatsApp Image 2022-10-10 at 7.44.54 PM (3).jpeg" alt="">
+          <img src="WhatsApp Image 2022-10-10 at 7.44.57 PM.jpeg" width = "650px" alt="">
+      </div>
+      <div class="column">
+       <img src="WhatsApp Image 2022-10-10 at 7.44.54 PM (4).jpeg" alt="">
+       <img src="WhatsApp Image 2022-10-10 at 7.44.54 PM.jpeg" alt="">
+       <img src="WhatsApp Image 2022-10-10 at 7.44.55 PM (1).jpeg" alt="">
+       <img src="WhatsApp Image 2022-10-10 at 7.44.55 PM (2).jpeg" alt="">
+       <img src="WhatsApp Image 2022-10-10 at 7.44.57 PM (3).jpeg" width = "650px" alt="">
+
+
+    </div>
+    <div class="column">
+       <img src="WhatsApp Image 2022-10-10 at 7.44.55 PM (3).jpeg" alt="">
+       <img src="WhatsApp Image 2022-10-10 at 7.44.55 PM (4).jpeg" alt="">
+       <img src="WhatsApp Image 2022-10-10 at 7.44.55 PM (5).jpeg" alt="">
+       <img src="WhatsApp Image 2022-10-10 at 7.44.55 PM.jpeg" alt="">
+       <img src="WhatsApp Image 2022-10-10 at 7.44.57 PM (2).jpeg" width = "650px" alt="">
+
+  </div>
+  <div class="column">
+       <img src="WhatsApp Image 2022-10-10 at 7.44.56 PM (1).jpeg" alt="">
+       <img src="WhatsApp Image 2022-10-10 at 7.44.56 PM (2).jpeg" alt="">
+       <img src="WhatsApp Image 2022-10-10 at 7.44.56 PM (3).jpeg" alt="">
+       <img src="WhatsApp Image 2022-10-10 at 7.44.56 PM.jpeg" alt="">
+
+       <img src="WhatsApp Image 2022-10-10 at 7.44.57 PM (1).jpeg" width = "650px" alt="">
+
+</div>
+
+      </div>
+
+    </div>
+    <script>
+      let stars = document.getElementById('stars');
+      let moon = document.getElementById('moon');
+      let mountains_behind = document.getElementById('mountains_behind');
+      let text = document.getElementById('text');
+      let btn = document.getElementById('btn');
+      let mountain_front = document.getElementById('mountain_front');
+      let header = document.querySelector('header');
+
+      window.addEventListener('scroll', function functionName() {
+         let value = window.scrollY;
+         stars.style.left = value * 0.25 + 'px';
+         moon.style.top = value * 1.05 + 'px';
+         mountains_behind.style.top = value * 0.5 + 'px';
+         mountain_front.style.top = value * 0 + 'px';
+         text.style.marginRight = value * 3.5 + 'px';
+         text.style.marginTop = value * 1.5 + 'px';
+         btn.style.marginTop = value * 1.5 + 'px';
+         header.style.top = value * 0.5 + 'px';
+      })
+
+    </script>
+  </body>
+</html>
